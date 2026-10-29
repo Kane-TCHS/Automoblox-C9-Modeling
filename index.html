@@ -469,7 +469,7 @@ function vParts(){
       ${doneRow(p,"Saved in my Automoblox C9 folder")}</div>`;
   } else {
     let extra="";
-    if(p.id==="windshield") extra=`<div class="callout"><b>Before you start:</b> download the windshield image and save it in your <span class="q">Automoblox C9</span> folder. The video uses it.${BUNDLED.windshield?` ${MOVE}`:""}<div class="btnrow" style="margin-top:8px">${BUNDLED.windshield?`<button class="btn small" data-dl="windshield">Download windshield image</button>`:`<a class="btn small" href="${esc(CONFIG.links.windshieldImage)}" target="_blank" rel="noopener">Download windshield image</a>`}</div></div>`;
+    if(p.id==="windshield") extra=`<div class="callout warn"><b>Heads up: use the XY plane, not the plane in the video.</b> The video starts its first sketch on the <span class="q">YZ Plane</span>. <b>Start yours on the <span class="q">XY Plane</span> instead.</b> If you use YZ, the windshield image comes in sideways. Follow everything else in the video as shown.</div><div class="callout"><b>Before you start:</b> download the windshield image and save it in your <span class="q">Automoblox C9</span> folder. The video uses it.${BUNDLED.windshield?` ${MOVE}`:""}<div class="btnrow" style="margin-top:8px">${BUNDLED.windshield?`<button class="btn small" data-dl="windshield">Download windshield image</button>`:`<a class="btn small" href="${esc(CONFIG.links.windshieldImage)}" target="_blank" rel="noopener">Download windshield image</a>`}</div></div>`;
     if(p.id==="wheel"){const a=value("wheel","D10"),b=value("wheel","D11");
       extra=`<div class="callout warn fix"><b>The video has a mistake. Swap these numbers:</b>
       <div class="tblwrap"><table><tr><th>When the video says</th><th>Type this instead</th></tr>
